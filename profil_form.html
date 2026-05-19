@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Formulaire Profil</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<h1>Formulaire Profil Utilisateur</h1>
+<form method="POST È " action="traitement.php">
+<label>Nom :</label><br>
+<input type="text" name="nom"><br><br>
+<label>Prénom :</label><br>
+<input type="text" name="prenom"><br><br>
+<label>Email :</label><br>
+<input type="email" name="email"><br><br>
+        <label>Formation :</label><br>
+        <select name="formation_id" id="formation_id" required>
+            <option value="">-- Choisir une formation --</option>
+            <option value="1">Intelligence Artificielle - 299 DT</option>
+            <option value="2">Data Science avec Python - 249 DT</option>
+            <option value="3">Développement Web Full Stack - 199 DT</option>
+            <option value="4">Cybersécurité & Ethical Hacking - 349 DT</option>
+            <option value="5">Réseau - 300 DT</option>
+        </select><br><br>
+
+
+
+<input type="submit" value="Envoyer">
+</form>
+
+<a href="includes/formation.php">← Retour aux formations</a>
+</body>
+</html>
